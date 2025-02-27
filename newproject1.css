@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --blue-col:#1E3A8A;
+    --yellow-col:#f2d14e;
+    --grey-col:#E5E7EB;
+    --hover-col:#1e3b8ac3;
+}
+.first-part{
+    background-image: url(images/landingpage.img);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: var(--blue-col);
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 30px;
+    font-family: Charm;
+}
+nav{
+    background-color: var(--yellow-col);
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    
+    }
+    
+    nav ul{
+        display: flex;
+        position: relative;
+        bottom: 40px;
+        padding-top: 20px;
+        list-style-type: none;
+        float: right;
+        
+    }
+    nav a{
+        font-family:Nunito ;
+        text-decoration: none;
+        margin: 20px;
+        color: var(--blue-col);
+        font-weight: bolder;
+        font-size:1.6rem;  
+        text-transform: capitalize;  
+    }
+    nav a:hover{
+        color:var(--hover-col) ;
+    }
+    .caption{
+      
+        height: 50vh;
+        width: 100%;
+        position: relative;
+        padding-top: 9rem;
+        padding-left: 2rem;
+    }
+    .main-caption{
+        font-family: Charm;
+        color: var(--grey-col);
+        font-size: 3.5rem;
+        text-shadow: 5px 1px 10px var(--blue-col) ;
+    }
+    /*second part*/
+    .second-part{
+        height: 20vh;
+        align-content: center;
+        justify-items: center;
+        background-color: var(--yellow-col);
+        color: var(--blue-col);
+        font-family:Nunito;
+    }
+    .admission-caption{
+       cursor: default;
+       font-size: 2rem;
+    }
+    .admission-caption>a{
+        text-decoration: none;
+        color: var(--blue-col);
+
+        
+    }
+    .admission-caption>a:hover{
+        color: var(--hover-col);
+        text-decoration: underline;   
+    }
+    .third-part-box{
+        height: 50vh;   
+        background-color: var(--grey-col);
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+       align-items: center;
+    }
+    .third-part-box-content{
+        
+        padding: 30px 50px;
+        color: var(--blue-col);
+        margin: 10px;
+        font-family: Nunito;
+        height: 400px;
+        line-height: 35px;
+        font-size: 1.25rem;
+        cursor: default;
+    }
+    .side-caption{
+        padding: 20px 0px;
+        text-transform: capitalize; 
+        font-family: Nunito;
+    }
+    .alumni-part{
+        height: 40vh;
+        background-color: var(--grey-col);
+       justify-items: center;
+       font-family: Nunito;
+       color: var(--blue-col);
+       border-top: 5px solid var(--yellow-col);
+       cursor: default;
+    }
+    .alumni-part-content{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+       align-items: center;
+    }
+    .alumni-caption{
+        font-size: 2.5rem;
+        padding-top: 40px;
+        
+    }
+    .alumni-quote{
+        padding: 20px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin: 20px;
+        
+    }
+    footer{
+        height: 50vh;
+        background-color: var(--yellow-col);
+        color: var(--blue-col);
+        font-family: Nunito;
+    }
+    .first-part-footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links{
+        
+        padding: 10px;
+        margin: 30px;
+        
+        font-size: 1.5rem;
+    }
+    .quick-links-list {
+        list-style-type: none;
+        font-weight: bold;
+    }
+    .quick-links-list >li{
+        cursor: pointer;
+        padding: 10px;
+    }
+    .contact-info{
+        font-size: 1.25rem;
+        font-weight: bold;
+        width: 30%;
+    }
+    .contact-info>address,.contact-info>p {
+        padding: 10px;
+    }
+    .social-media>i{
+        cursor: pointer;
+        padding: 7px;
+    }
+    .social-media>i:hover{
+        color: var(--hover-col);
+    }
+    .last-part-footer{
+        justify-items: center;
+        font-family: Nunito;
+        font-size: 1.25rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+    @media screen and (max-width:750px) {
+        .alumni-part{
+            height: 60vh;
+            
+        }
+        alumni-caption{
+            padding-left: 20px;
+            font-size: 1.9rem;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
